@@ -1,0 +1,804 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "aflexa",
+            "intents": [
+                {
+                    "name": "WhatsMyFlexIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's my flex",
+                        "what is my flex",
+                        "what is flex",
+                        "my flex are what",
+                        "flex are what",
+                        "flex",
+                        "what flex",
+                        "what are my flex",
+                        "flex for me are",
+                        "flex please",
+                        "please flex",
+                        "tell me my flex",
+                        "tell me flex",
+                        "give me flex",
+                        "i demand flex",
+                        "yo flex dog",
+                        "flex now",
+                        "show me my flex",
+                        "dining dollars",
+                        "give me dining dollars",
+                        "dining dollars now",
+                        "tell me dining dollars",
+                        "what are my dining dollars",
+                        "dining dollar information",
+                        "dining dollar amount",
+                        "give me dining dollar information",
+                        "tell me dollar amount"
+                    ]
+                },
+                {
+                    "name": "WhatsMyExpressIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's my express",
+                        "what is my express",
+                        "what is express",
+                        "my express are what",
+                        "express are what",
+                        "express",
+                        "what express",
+                        "what are my express",
+                        "express for me are",
+                        "express please",
+                        "please express",
+                        "tell me my express",
+                        "tell me express",
+                        "give me express",
+                        "i demand express",
+                        "yo express dog",
+                        "express now",
+                        "show me my express"
+                    ]
+                },
+                {
+                    "name": "SwipesIntent",
+                    "slots": [],
+                    "samples": [
+                        "how many swipes do I have left",
+                        "Swipe update",
+                        "how many swipes do I have remaining",
+                        "how many swipes do I have",
+                        "remaining number of swipes",
+                        "how many swipes haven't I used",
+                        "access how many swipes I have left",
+                        "swipes",
+                        "how many swiepes",
+                        "yo swipes",
+                        "swipe me",
+                        "tell me swipes",
+                        "give me swipe information",
+                        "swipe me baby one more time",
+                        "swiper no swiping"
+                    ]
+                },
+                {
+                    "name": "BuildingIntent",
+                    "slots": [
+                        {
+                            "name": "Dorm",
+                            "type": "LIST_OF_BUILDINGS"
+                        }
+                    ]
+                },
+                {
+                    "name": "FloorIntent",
+                    "slots": [
+                        {
+                            "name": "Floor",
+                            "type": "LIST_OF_BUILDINGS"
+                        }
+                    ]
+                },
+                {
+                    "name": "LaundryIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's the E.T.A on my laundry",
+                        "what is the E.T.A on my laundry",
+                        "how long till my laundry is done",
+                        "in how many minutes should i go get my laundry",
+                        "how long before I go get my laundry",
+                        "what is the update on my laundry",
+                        "laundry",
+                        "when is laundry done",
+                        "how long for my laundry",
+                        "tell me my laundry",
+                        "i demand my laundry",
+                        "give me laundry",
+                        "laundry now",
+                        "laundry update",
+                        "is my laundry done",
+                        "time for laundry",
+                        "give me laundry status",
+                        "laundry status update"
+                    ]
+                },
+                {
+                    "name": "ExitIntent",
+                    "slots": [],
+                    "samples": [
+                        "exit menu",
+                        "leave",
+                        "good bye",
+                        "leave",
+                        "stop",
+                        "go back",
+                        "halt"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                }
+            ],
+            "types": 
+            [
+                {
+                    "name": "LIST_OF_BUILDINGS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "barrett"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brown"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bryan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chandler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dinwiddie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dupont"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eagle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "frat house"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fauquier"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gooch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "grad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "griffin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hardy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hunt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jefferson"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "landrum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lemon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ludwell"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monroe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nicholson"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "old dominion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one tribe place"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reeves"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "richmond"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sorority"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spotswood"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "taliaferro"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tazwell"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tribe square"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yates"
+                            }
+                        }
+                    ]
+                },
+                    {
+                    "name": "LIST_OF_BARRETT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "third floor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "second floor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "first floor"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_BROWN",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_BRYAN",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "south"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "north"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_CHANDLER",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_DINWIDDIE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "kitchen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "second floor"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_DUPONT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "west"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "east"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_EAGLE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "eagle h"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eagle g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eagle j"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eagle f"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_FH",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "740"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "730"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "720"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "710"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "660"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "630"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "620"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "760"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "750"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "670"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "640"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_FAUQUIER",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "upper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lower"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kitchen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_GOOCH",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "upper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lower"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kitchen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_GRAD_BLDG",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_GRIFFIN",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "griffin d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "griffin c"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "griffin e"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "griffin b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "griffin a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_HUNT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_HARDY",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_JEFFERSON",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_LANDRUM",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_LEMON",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_LION",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lion l"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lion k"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lion m"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_LUDWELL",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_MONROE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_NICHOLSON",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "kicthen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lower"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "upper"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_OLD_DOMINION",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_ONE_TRIBE_PLACE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_REVES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "third floor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "first floor"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_RICHMOND",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_SORORITY",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "12"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "11"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_SPOTSWOOD",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "upper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lower"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kitchen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_TALIAFERRO",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_TAZWELL",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_TRIBE_SQUARE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "third"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "second"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_YATES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None"
+                            }
+                        }
+                        
+                    ]
+                }
+            ]
+        }
+    }
+}
