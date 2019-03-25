@@ -82,43 +82,25 @@
                     ]
                 },
                 {
-                    "name": "BuildingIntent",
+                    "name": "LaundryIntent",
                     "slots": [
                         {
                             "name": "Dorm",
                             "type": "LIST_OF_BUILDINGS"
-                        }
-                    ]
-                },
-                {
-                    "name": "FloorIntent",
-                    "slots": [
+                        },
                         {
                             "name": "Floor",
-                            "type": "LIST_OF_BUILDINGS"
+                            "type": "LIST_OF_FLOOR"
                         }
-                    ]
-                },
-                {
-                    "name": "LaundryIntent",
-                    "slots": [],
+                    ],
                     "samples": [
-                        "what's the E.T.A on my laundry",
-                        "what is the E.T.A on my laundry",
-                        "how long till my laundry is done",
-                        "in how many minutes should i go get my laundry",
-                        "how long before I go get my laundry",
-                        "what is the update on my laundry",
-                        "laundry",
-                        "when is laundry done",
-                        "how long for my laundry",
+                        "laundry in {Dorm}",
                         "tell me my laundry",
                         "i demand my laundry",
                         "give me laundry",
                         "laundry now",
                         "laundry update",
                         "is my laundry done",
-                        "time for laundry",
                         "give me laundry status",
                         "laundry status update"
                     ]
@@ -127,13 +109,10 @@
                     "name": "ExitIntent",
                     "slots": [],
                     "samples": [
-                        "exit menu",
-                        "leave",
-                        "good bye",
-                        "leave",
+                        "quit",
                         "stop",
-                        "go back",
-                        "halt"
+                        "exit",
+                        "exit menu"
                     ]
                 },
                 {
@@ -143,10 +122,24 @@
                 {
                     "name": "AMAZON.HelpIntent",
                     "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "BigIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me everything"
+                    ]
                 }
             ],
-            "types": 
-            [
+            "types": [
                 {
                     "name": "LIST_OF_BUILDINGS",
                     "values": [
@@ -287,7 +280,7 @@
                         },
                         {
                             "name": {
-                                "value": "taliaferro"
+                                "value": "tolliver"
                             }
                         },
                         {
@@ -307,7 +300,7 @@
                         }
                     ]
                 },
-                    {
+                {
                     "name": "LIST_OF_BARRETT",
                     "values": [
                         {
@@ -332,7 +325,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "brown"
                             }
                         }
                     ]
@@ -357,7 +350,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "chandler"
                             }
                         }
                     ]
@@ -522,37 +515,52 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "first floor"
                             }
                         }
                     ]
                 },
                 {
-                    "name": "LIST_OF_GRIFFIN",
+                    "name": "LIST_OF_FLOOR",
                     "values": [
                         {
                             "name": {
-                                "value": "griffin d"
+                                "value": "kitchen"
                             }
                         },
                         {
                             "name": {
-                                "value": "griffin c"
+                                "value": "upper"
                             }
                         },
                         {
                             "name": {
-                                "value": "griffin e"
+                                "value": "lower"
                             }
                         },
                         {
                             "name": {
-                                "value": "griffin b"
+                                "value": "1st Floor"
                             }
                         },
                         {
                             "name": {
-                                "value": "griffin a"
+                                "value": "2nd Floor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3rd Floor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "North"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "South"
                             }
                         }
                     ]
@@ -562,7 +570,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "first floor"
                             }
                         }
                     ]
@@ -572,7 +580,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "first floor"
                             }
                         }
                     ]
@@ -582,7 +590,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "jefferson"
                             }
                         }
                     ]
@@ -592,7 +600,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "landrum"
                             }
                         }
                     ]
@@ -602,7 +610,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "lemon"
                             }
                         }
                     ]
@@ -632,7 +640,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "ludwell"
                             }
                         }
                     ]
@@ -642,7 +650,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "monroe"
                             }
                         }
                     ]
@@ -672,7 +680,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "old dominion"
                             }
                         }
                     ]
@@ -682,7 +690,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "one tribe place"
                             }
                         }
                     ]
@@ -707,7 +715,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "upper"
                             }
                         }
                     ]
@@ -757,7 +765,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "taliaferro"
                             }
                         }
                     ]
@@ -767,7 +775,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "tazwell"
                             }
                         }
                     ]
@@ -792,10 +800,9 @@
                     "values": [
                         {
                             "name": {
-                                "value": "None"
+                                "value": "yates"
                             }
                         }
-                        
                     ]
                 }
             ]
